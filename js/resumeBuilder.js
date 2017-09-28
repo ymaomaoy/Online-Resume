@@ -104,21 +104,22 @@ var work = {
 };
 
 work.display = function() {
-  for (var i = 0; i < workExperience.jobs.length; i++) {
+  for (var i = 0; i < work.jobs.length; i++) {
     var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[i].title);
     var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[i].employer);
     var formattedDates = HTMLworkDates.replace("%data%", work.jobs[i].dates);
     var formattedCompanyIntro = HTMLcompanyIntro.replace("%data%", work.jobs[i].companyIntro);
     var formattedWorkDescription = HTMLworkDescripition.replace("%data%", work.jobs[i].descripition);
-    var formattedMainResponsibility = HTMLmainResponsibility.replace("%data%", workExperience.jobs[i].mainResponsibility);
+    var formattedMainResponsibility = HTMLmainResponsibility.replace("%data%", work.jobs[i].mainResponsibility);
 
-    $("#workExperience").append(HTMLworkStart);
-    $(".work-entry:last").append(formattedTitle);
-    $(".work-entry:last").append(formattedEmployer);
-    $(".work-entry:last").append(formattedDates);
-    $(".work-entry:last").append(formattedCompanyIntro);
-    $(".work-entry:last").append(formattedWorkDescription);
-    $(".work-entry:last").append(formattedMainResponsibility);
+    $("#work").append(HTMLworkStart);
+    $(".work-entry:last").append(formattedTitle + formattedEmployer + formattedDates +
+      formattedCompanyIntro + formattedWorkDescription + formattedMainResponsibility);
+    // $(".work-entry:last").append(formattedEmployer);
+    // $(".work-entry:last").append(formattedDates);
+    // $(".work-entry:last").append(formattedCompanyIntro);
+    // $(".work-entry:last").append(formattedWorkDescription);
+    // $(".work-entry:last").append(formattedMainResponsibility);
   }
 
   for (var k = 0; k < work.internship.length; k++) {
@@ -129,7 +130,7 @@ work.display = function() {
     var formattedWorkDescription = HTMLworkDescripition.replace("%data%", work.internship[k].descripition);
     var formattedMainResponsibility = HTMLmainResponsibility.replace("%data%", work.internship[k].mainResponsibility);
 
-    $("#workExperience").append(HTMLworkStart);
+    $("#work").append(HTMLworkStart);
     $(".work-entry:last").append(formattedTitle + formattedEmployer + formattedDates +
     formattedCompanyIntro + formattedWorkDescription + formattedMainResponsibility);
     // $(".work-entry:last").append(formattedEmployer);
