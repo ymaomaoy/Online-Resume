@@ -111,17 +111,17 @@ h4 {
 }
 .selfIntroduction {
     margin-top: 20px;
-    padding: 1% 0; 
+    padding: 1% 0;
     background-color: #f6f7f8;
 }
 .selfIntroduction::before {
-    content: url(/images/icons/yinhao00.png);
+    content: url(／Online-Resume/images/icons/yinhao00.png);
     /*content: open-quote;*/
     position: relative;
     left: 4px;
 }
 .selfIntroduction::after {
-    content: url(/images/icons/yinhao01.png);
+    content: url(／Online-Resume/images/icons/yinhao01.png);
     position: relative;
     left: 97%;
 }
