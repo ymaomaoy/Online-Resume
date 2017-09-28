@@ -44,7 +44,7 @@ bio.display = function() {
 
 bio.display();
 
-var workExperience = {
+var work = {
   "jobs": [
     {
       "title": "User Experience Designer",
@@ -52,7 +52,7 @@ var workExperience = {
       "location": "Shanghai",
       "dates": "Jul 2016 till now",
       "companyIntro": "ArcheX is a food, digital and business innovation firm.<br>",
-      "workDescripition": "Yijing worked on research, design, and user testing, as well as client communications for various lean UX and design projects. The projects include software development , gamified system design, smart retail and media research etc.Main work content includes:<br>",
+      "descripition": "Yijing worked on research, design, and user testing, as well as client communications for various lean UX and design projects. The projects include software development , gamified system design, smart retail and media research etc.Main work content includes:<br>",
       "mainResponsibility": "&middot Product design.Define product strategy, product features and product requirement documents.<br>" +
       "&middot Interaction design.Design and prototype user flows and experience.Make low-fi to hi-fi prototype.Animate transition and micro interactions with Principle and After Effect.<br>" +
       "&middot Research. Conduct user research and usability testing,make interview tools, organize workshops to test initial ideas with prototypes.<br>"
@@ -63,7 +63,7 @@ var workExperience = {
       "location": "Shanghai",
       "dates": "Sep 2015 - Jan 2016",
       "companyIntro": "Bits x Bites is China’s first purpose + profit, food-focused, accelerator venture capital platform.<br>",
-      "workDescripition": "Yijing worked for website redesign project as principal designer and service prototyping project as research assistant.Main work content includes:<br>",
+      "descripition": "Yijing worked for website redesign project as principal designer and service prototyping project as research assistant.Main work content includes:<br>",
       "mainResponsibility": "&middot Define content and design user interfaces.Work closely with front-end developer. <br>" +
         "&middot Conduct user research with service design approach.<br>" +
         "&middot Facilitate workshops to test initial ideas and prototypes.<br>"
@@ -76,7 +76,7 @@ var workExperience = {
       "location": "Shanghai",
       "dates": "May - Sep 2015",
       "companyIntro": "ISUX (Internet Social User Experience) ,Shanghai design center.<br>",
-      "workDescripition": "Worked on Qidian,Social-CRM management system,from early concepts, low-fi prototypes to hi-fi prototypes. Main work content includes:<br>",
+      "descripition": "Worked on Qidian,Social-CRM management system,from early concepts, low-fi prototypes to hi-fi prototypes. Main work content includes:<br>",
       "mainResponsibility": "&middot Define user flows and create wireframes.<br>" +
         "&middot Define interaction specs.<br>"
     },
@@ -86,7 +86,7 @@ var workExperience = {
       "location": "Shanghai",
       "dates": "June - Aug 2014",
       "companyIntro": "Philips Lighting, Shanghai design center.<br>",
-      "workDescripition": "Participated in several innovation projects .Main work content includes:<br>",
+      "descripition": "Participated in several innovation projects .Main work content includes:<br>",
       "mainResponsibility": "&middot Create storyboard, sketch ideas, make prototypes.<br>" +
         "&middot Product design with 3D software.<br>" +
         "&middot Conduct competitive research and desk research.<br>"
@@ -97,19 +97,19 @@ var workExperience = {
       "location": "Shanghai",
       "dates": "Sep 2013 - Apr 2014",
       "companyIntro": "LOE DESIGN is a professional design planning and design consulting company.<br>",
-      "workDescripition": "Participated in cross-discipline projects through design research, product design, motion design and visual design.",
+      "descripition": "Participated in cross-discipline projects through design research, product design, motion design and visual design.",
       "mainResponsibility": "Worked with design team in visual design exploration, storytelling and detailed interaction design."
     }
   ]
 };
 
-workExperience.display = function() {
+work.display = function() {
   for (var i = 0; i < workExperience.jobs.length; i++) {
-    var formattedTitle = HTMLworkTitle.replace("%data%", workExperience.jobs[i].title);
-    var formattedEmployer = HTMLworkEmployer.replace("%data%", workExperience.jobs[i].employer);
-    var formattedDates = HTMLworkDates.replace("%data%", workExperience.jobs[i].dates);
-    var formattedCompanyIntro = HTMLcompanyIntro.replace("%data%", workExperience.jobs[i].companyIntro);
-    var formattedWorkDescription = HTMLworkDescripition.replace("%data%", workExperience.jobs[i].workDescripition);
+    var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[i].title);
+    var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[i].employer);
+    var formattedDates = HTMLworkDates.replace("%data%", work.jobs[i].dates);
+    var formattedCompanyIntro = HTMLcompanyIntro.replace("%data%", work.jobs[i].companyIntro);
+    var formattedWorkDescription = HTMLworkDescripition.replace("%data%", work.jobs[i].descripition);
     var formattedMainResponsibility = HTMLmainResponsibility.replace("%data%", workExperience.jobs[i].mainResponsibility);
 
     $("#workExperience").append(HTMLworkStart);
@@ -121,25 +121,26 @@ workExperience.display = function() {
     $(".work-entry:last").append(formattedMainResponsibility);
   }
 
-  for (var k = 0; k < workExperience.internship.length; k++) {
-    var formattedTitle = HTMLworkTitle.replace("%data%", workExperience.internship[k].title);
-    var formattedEmployer = HTMLworkEmployer.replace("%data%", workExperience.internship[k].employer);
-    var formattedDates = HTMLworkDates.replace("%data%", workExperience.internship[k].dates);
-    var formattedCompanyIntro = HTMLcompanyIntro.replace("%data%", workExperience.internship[k].companyIntro);
-    var formattedWorkDescription = HTMLworkDescripition.replace("%data%", workExperience.internship[k].workDescripition);
-    var formattedMainResponsibility = HTMLmainResponsibility.replace("%data%", workExperience.internship[k].mainResponsibility);
+  for (var k = 0; k < work.internship.length; k++) {
+    var formattedTitle = HTMLworkTitle.replace("%data%", work.internship[k].title);
+    var formattedEmployer = HTMLworkEmployer.replace("%data%", work.internship[k].employer);
+    var formattedDates = HTMLworkDates.replace("%data%", work.internship[k].dates);
+    var formattedCompanyIntro = HTMLcompanyIntro.replace("%data%", work.internship[k].companyIntro);
+    var formattedWorkDescription = HTMLworkDescripition.replace("%data%", work.internship[k].descripition);
+    var formattedMainResponsibility = HTMLmainResponsibility.replace("%data%", work.internship[k].mainResponsibility);
 
     $("#workExperience").append(HTMLworkStart);
-    $(".work-entry:last").append(formattedTitle);
-    $(".work-entry:last").append(formattedEmployer);
-    $(".work-entry:last").append(formattedDates);
-    $(".work-entry:last").append(formattedCompanyIntro);
-    $(".work-entry:last").append(formattedWorkDescription);
-    $(".work-entry:last").append(formattedMainResponsibility);
+    $(".work-entry:last").append(formattedTitle + formattedEmployer + formattedDates +
+    formattedCompanyIntro + formattedWorkDescription + formattedMainResponsibility);
+    // $(".work-entry:last").append(formattedEmployer);
+    // $(".work-entry:last").append(formattedDates);
+    // $(".work-entry:last").append(formattedCompanyIntro);
+    // $(".work-entry:last").append(formattedWorkDescription);
+    // $(".work-entry:last").append(formattedMainResponsibility);
   }
 };
 
-workExperience.display();
+work.display();
 
 var education = {
   "schools": [
@@ -149,7 +150,7 @@ var education = {
       "location": "Shanghai",
       "dates": "2013-2016",
       "degree": "Master",
-      "major": "Design"
+      "majors": ["Design"]
     },
     {
       "name": "HFG Offenbach",
@@ -157,7 +158,7 @@ var education = {
       "location": "Offenbach",
       "dates": "2014-2015",
       "degree": "Exchange study",
-      "major": "Product Design"
+      "majors": ["Product Design"]
     },
     {
       "name": "Jiangnan University",
@@ -165,7 +166,7 @@ var education = {
       "location": "Wuxi",
       "dates": "2009-2013",
       "degree": "Bachelor",
-      "major": "Industrial Design"
+      "majors": ["Industrial Design"]
     }
   ],
   "onlineCourses": [
