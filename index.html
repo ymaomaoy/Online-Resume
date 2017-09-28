@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Resume</title>
+      <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <!-- <link rel="stylesheet" href="https://cdnjs.com/libraries/normalize"> -->
+      <link rel="stylesheet" href="css/reset.css">
+      <link href="css/style.css" rel="stylesheet">
+      <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+   </head>
+   <body>
+      <div id="main">
+      <div id="header" class="container">
+         <div id="biopic" class="left-column"></div>
+         <div id="bio" class="right-column"></div>
+      </div>
+      <!-- </div>
+         <div style="clear: both;"></div>     -->
+      <div id="contentTop" class="container">
+         <div class="left-column">
+            <div id="contact" class="vertical">
+               <div class="title">
+                  <img src="images/icons/contact.svg" class="icon" />
+                  <h2>Contact</h2>
+                  <div class="dash"></div>
+               </div>
+            </div>
+            <div id="education" class="vertical">
+               <div class="title">
+                  <img src="images/icons/education.svg" class="icon">
+                  <h2>Education</h2>
+                  <div class="dash"></div>
+               </div>
+               <div style="clear: both;"></div>
+            </div>
+         </div>
+         <div id="workExperience" class="right-column">
+            <div class="title">
+               <img src="images/icons/work.svg" class="icon" />
+               <h2>Professional Experience</h2>
+               <div class="dash"></div>
+            </div>
+         </div>
+      </div>
+      <div id="contentBottom" class="container">
+         <div id="honor" class="left-column">
+            <div class="title">
+               <img src="images/icons/award.svg" class="icon" />
+               <h2>Awards &amp; Certifications</h2>
+               <div class="dash"></div>
+            </div>
+         </div>
+         <div id="skills" class="right-column">
+            <div class="title">
+               <img src="images/icons/skill.svg" class="icon" />
+               <h2>Skills</h2>
+               <div class="dash"></div>
+            </div>
+         </div>
+      </div>
+      <div id="projects">
+         <div class="title">
+            <img src="images/icons/project.svg" class="icon" />
+            <h2>Projects</h2>
+            <div class="dash"></div>
+         </div>
+         <div class="projects"></div>
+      </div>
+      <div id="mapDivTemp">
+         <div class="title">
+            <h2>Where I've lived and worked</h2>
+            <div class="dash"></div>
+         </div>
+         <div id="mapDiv" class="container">
+         </div>
+      </div>
+      <div id="footer">
+         <ul id="footerContacts" class="flex-box">
+            <p>Let's connect</p>
+         </ul>
+      </div>
+      <script src="js/jQuery.js"></script>
+      <script src="js/helper.js"></script>
+      <script src="js/resumeBuilder.js"></script>
+      <script>
+         if (document.getElementsByClassName('vertical').length === 0) {
+           document.getElementById('contact').style.display = 'none';
+         }
+         if (document.getElementsByTagName('h1').length === 0) {
+           document.getElementById('header').style.display = 'none';
+         }
+         if (document.getElementsByClassName('work-entry').length === 0) {
+           document.getElementById('workExperience').style.display = 'none';
+         }
+         if (document.getElementsByClassName('project-entry').length === 0) {
+           document.getElementById('projects').style.display = 'none';
+         }
+         if (document.getElementsByClassName('education-entry').length === 0) {
+           document.getElementById('education').style.display = 'none';
+         }
+         if (document.getElementsByClassName('flex-box').length === 0) {
+           document.getElementById('lets-connect').style.display = 'none';
+         }
+         if (document.getElementById('map') === null) {
+           document.getElementById('mapDiv').style.display = 'none';
+         }
+      </script>
+   </body>
+</html>

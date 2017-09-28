@@ -1,0 +1,339 @@
+body,
+div,
+ul,
+li,
+p,
+span,
+h1,
+h2,
+h3,
+h4 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Hind', sans-serif;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #0a0a0a
+    line-height: 48px;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #0a0a0a;
+    line-height: 28px;
+    /*padding: 8px;*/
+    margin: 8px 4px;
+}
+h3 {
+    font-family: 'Hind', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #0a0a0a;
+    line-height: 24px;
+    margin: 8px 0;
+}
+h4 {
+    font-family: 'Hind', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #292f36;
+    line-height: 24px;
+    margin: 8px 24px;
+}
+#main {
+    position: relative;
+    margin: 2% 2%;
+    max-width: 1440px;
+}
+#profession {
+    margin-left: 24px;
+}
+#capability {
+    margin-left: 24px;
+}
+#biopic {
+    padding: 0 0;
+}
+#projects {
+    margin: 20px 20px;
+}
+#mapDivTemp {
+    margin: 20px 20px;
+}
+#workExperience h2 {
+    width: 18em;
+}
+#honor h2 {
+    width: 27em;
+}
+#mapDivTemp h2 {
+    width: 18em;
+}
+.projects {
+    display: -webkit-flex;
+    display: flex;
+    max-width: auto;
+    margin: 4px 20px;
+}
+.container {
+    display: -webkit-flex;
+    display: flex;
+    max-width: auto;
+}
+.left-column {
+    -webkit-flex: 1;
+    flex: 1;
+    /*border: 5px solid #f6f7f8;*/
+
+    flex-direction: column;
+    max-width: 33%;
+    margin: 20px 20px;
+}
+.right-column {
+    -webkit-flex: 2;
+    flex: 2;
+    /*border: 5px solid #f6f7f8;*/
+
+    flex-direction: column;
+    max-width: 66%;
+    margin: 20px 20px;
+}
+.vertical {
+    justify-content: flex-start;
+}
+.biopic {
+    width: 300px;
+    margin: 0 auto;
+    /*position:static;*/
+}
+.selfIntroduction {
+    margin-top: 20px;
+    padding: 1% 0;
+    background-color: #f6f7f8;
+}
+.selfIntroduction::before {
+    content: url(/Users/yijingyin/Documents/Intro-To-Programming/yijing-resume/images/icons/yinhao00.png);
+    /*content: open-quote;*/
+    position: relative;
+    left: 4px;
+}
+.selfIntroduction::after {
+    content: url(/Users/yijingyin/Documents/Intro-To-Programming/yijing-resume/images/icons/yinhao01.png);
+    position: relative;
+    left: 97%;
+}
+.title {
+    display: -webkit-flex;
+    display: flex;
+    align-items: baseline;
+}
+.dash {
+    width: 100%;
+    margin-left: 8px;
+    border-bottom: 2px solid #0A0A0A;
+}
+.title-text {
+    display: inline-block;
+    padding-right: 8px;
+}
+.list {
+    display: inline-block;
+}
+.contact-entry {
+    margin-top: 10px;
+}
+.employer-text {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #0a0a0a;
+    padding: 0;
+    display: inline-block;
+    line-height: 20px;
+    padding: 0 8px;
+    margin: 0 8px;
+}
+.work-entry .date-text {
+    font-style: italic;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #0a0a0a;
+    display: inline-block;
+    padding: 0 8px;
+    margin: 0 8px;
+}
+.white-text {
+    font-weight: 200;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #0a0a0a;
+    display: inline-block;
+    padding: 0 8px;
+}
+.bold-item {
+    font-weight: bold;
+}
+.svg {
+    height: 12px;
+    margin-right: 10px;
+}
+.selfIntroduction p {
+    margin-right: 12px;
+}
+p {
+    font-size: 16px;
+    color: #0a0a0a;
+    line-height: 20px;
+    margin-left: 24px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+.date-text {
+    font-size: 16px;
+    color: #0a0a0a;
+    line-height: 20px;
+}
+.location-text {
+    font-style: italic;
+    font-size: 16px;
+    color: #0a0a0a;
+    line-height: 16px;
+}
+.degree-text {
+    float: left;
+}
+a {
+    position: relative;
+    color: #0a0a0a;
+    text-decoration: none;
+    margin:0 auto 10px;
+    padding: 0;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+}
+a:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #fc453d;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+a:hover:after {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.project-entry {
+    width: 30%;
+    margin: 0 10px;
+    background-color: #f6f7f8;
+    padding-left: 20px;
+    padding-bottom: 1%;
+}
+.bar {
+    width: 0px;
+    height: 2px;
+    /*display: block;*/
+    /*margin-left: 32px;*/
+    /*margin-top: 30px;*/
+    /*padding-left: 14px;*/
+
+    background-color: #fc453d;
+}
+ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-left: 20px;
+}
+.skills li {
+    margin-bottom: 4px;
+    line-height: 24px;
+    font-size: 16px;
+}
+.flex-box li {
+    margin: 0 20px;
+}
+li {
+    margin-bottom: 4%;
+    margin-left: 8px;
+}
+.mobile {
+    list-style: none;
+}
+.email {
+    list-style: none;
+}
+.linkedin {
+    list-style: none;
+}
+.icon {
+    width: 15px;
+    height: auto;
+    margin: 4px;
+}
+.flex-box {
+    display: -webkit-flex;
+    display: flex;
+    max-width: auto;
+    padding-top: 8px;
+    border-top: 2px solid #0a0a0a;
+    margin: 4px 20px;
+    align-items: baseline;
+}
+img.map {
+    width: 98%;
+    margin: 0 20px;
+}
+span {
+    padding: 0;
+}
+@media only screen and (max-width: 1024px) {
+    #lets-connect {
+        margin-top: 5%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .biopic {
+        width: 175px;
+    }
+}
+@media only screen and (max-width: 750px) {
+    #lets-connect {
+        margin-top: 10%;
+    }
+    .biopic {
+        width: 150px;
+    }
+    .welcome-message {
+        display: none;
+    }
+}
+#map {
+    display: block;
+    height: 100%;
+    margin: 0 5%;
+}
+#mapDiv {
+    height: 400px;
+    width: 100%;
+    padding-bottom: 5%;
+}
+@media only screen and (min-width: 750px) {
+    #skills-h3,
+    .biopic {
+        display: block;
+    }
+}
