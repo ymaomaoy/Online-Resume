@@ -240,8 +240,7 @@ a:hover:after {
     width: 30%;
     margin: 0 10px;
     background-color: #f6f7f8;
-    padding-left: 20px;
-    padding-bottom: 1%;
+    padding: 1% 10px;
 }
 .bar {
     width: 0px;
@@ -298,6 +297,7 @@ img.map {
     margin: 0 20px;
 }
 span {
+    line-height: 20px;
     padding: 0;
 }
 @media only screen and (max-width: 1024px) {

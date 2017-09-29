@@ -26,7 +26,7 @@ var HTMLschoolName = '<h3 class="list">%data%</h3>';
 var HTMLschoolCollecge = '<p class="college-text">%data%</p>';
 var HTMLschoolDates = '<p class="date-text">%data%</p>';
 var HTMLschoolDegree = '<p class="degree-text">%data%</p>';
-var HTMLschoolMajor = '<span class="major-text">&nbsp; - %data%</span>';
+var HTMLschoolMajor = '<span class="major-text"> - %data%</span>';
 
 var HTMLonlineClasses = '<h4>Online Classes</h4>';
 var HTMLonlineStart = '<ul><li class="onlinecourse-entry"></li></ul>';
